@@ -1,0 +1,32 @@
+
+// _skills.scss
+
+.skills {
+    width: 100%;
+    background: tomato;
+    padding: 5rem 0;
+
+    .skills-wrapper {
+        padding-bottom: 3rem;
+        @include centerXY;
+        flex-wrap: wrap;
+    }
+
+    .section-heading {
+        color: #fff;
+        text-align: center;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 3.5em;
+        padding-top: 3rem;
+    }
+
+    .skill {
+        margin: 1rem;
+
+        img {
+            height: 100px;
+            width: 100px;
+        }
+    }
+}
+

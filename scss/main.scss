@@ -1,0 +1,36 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+// this feature is currently not supported by some browsers
+// will add workaround later
+
+
+
+// imports
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+#main {
+}
+
+@import "config";
+@import "header";
+@import "home";
+@import "about";
+@import "skills";
+@import "work";
+@import "contact";
+@import "responsiveness";
+
+
+
+
+
+
+
+
+
+
+

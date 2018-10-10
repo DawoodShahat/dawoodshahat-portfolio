@@ -1,0 +1,23 @@
+// _config.scss
+@mixin centerXY {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin easeOut {
+    transition: all .8s ease-out;
+}
+
+// media query mixins
+@mixin mediaSm {
+    @media screen and (max-width: 600px){
+        @content;
+    }
+}
+
+@mixin mediaMd {
+    @media screen and (max-width: 768px){
+        @content;
+    }
+}

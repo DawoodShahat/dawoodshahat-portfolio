@@ -1,0 +1,120 @@
+
+// _mobile.scss responsiveness
+@include mediaMd {
+    header {
+        display: block;
+        background-color: #fff;
+        color: #000;
+
+        .branding {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .toggler-icon {
+                display: block;
+            }
+
+            .logo {
+                font-size: 1em;
+            }
+        }
+
+        .navbar ul {
+            margin-top: 3px;
+            display: block;
+        }
+
+        .nav-link {
+            display: inline-block;
+            margin: 0;
+            color: #000;
+            width: 100%;
+
+            &:hover {
+                background: rgba(#dedede, 0.2);
+            }
+        }
+    }
+
+    .navbar {
+        display: none;
+
+        &.show {
+            display: block;
+        }
+    }
+
+    // home
+    .home {
+        .description {
+            //3.5 2em
+
+            .lg-heading {
+                font-size: 2.8em;
+            }
+
+            .sm-heading {
+                font-size: 1.5em;
+            }
+        }
+    }
+
+    // about
+    .about {
+        flex-direction: column;
+
+        .description-wrapper {
+            @include centerXY;
+            margin-top: 3rem;
+        }
+    }
+
+    // work 
+    .work {
+
+        .projects {
+            width: 85%;
+        }
+
+        .project {
+        }
+    }
+
+}
+
+@include mediaSm {
+    // home
+    .home {
+        .description {
+            .lg-heading {
+                font-size: 2.4em;
+            }
+
+            .sm-heading {
+                font-size: 1em;
+            }
+        }
+    }
+
+    //work 
+    .work {
+        .project {
+           width: 100%; 
+        }
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

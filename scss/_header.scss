@@ -1,0 +1,54 @@
+
+// _header.scss
+header {
+    color: #fff;
+    width: 100%;
+    z-index: 10;
+    position: fixed;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    align-items: center;
+    padding: 1rem 0;
+
+    .navbar ul {
+        list-style-type: none;
+        display: flex;
+        width: 100%;
+    }
+
+    .nav-link  {
+        display: inline-block;
+        color: #fff;
+        text-decoration: none;
+        padding: .8rem 2rem;
+        @include easeOut;
+
+        &:hover {
+            background-color: rgba(#fff, 0.3);
+        }
+    }
+
+    .branding {
+        margin-right: auto;
+        margin-left: 2rem;
+
+        .logo {
+            font-size: 1.5em;
+        }
+
+        .toggler-icon {
+            margin-right: 2rem;
+            display: none;
+
+            .line {
+                height: 4px;
+                width: 38px;
+                background: #000;
+
+                &:nth-child(2){
+                    margin: 6px 0;
+                }
+            }
+        }
+    }
+}

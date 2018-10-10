@@ -1,0 +1,35 @@
+// _home.scss
+.home {
+
+    height: 100vh;
+    width: 100%;
+    color: #fff;
+    background: url('../assets/business.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    @include centerXY;
+
+    // overlay
+    &:after {
+        content: "";
+        position: absolute;
+        background: rgba(#000, 0.7);
+        height: 100vh;
+        width: 100%;
+    }
+
+    .description {
+        z-index: 3;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    .lg-heading {
+        font-size: 3.5em;
+    }
+
+    .sm-heading {
+        font-weight: 100;
+        font-size: 2em;
+    }
+}

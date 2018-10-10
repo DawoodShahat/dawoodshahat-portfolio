@@ -1,0 +1,31 @@
+// _about.scss
+.about {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 11rem 0;
+
+    .profile-wrapper {
+        flex: 1 1 40%;
+        @include centerXY;
+    }
+
+    .description-wrapper {
+        flex: 1 1 40%;
+
+        .description {
+            width: 80%;
+            font-size: 1.3em;
+            line-height: 1.5;
+            font-family: 'Open Sans', sans-serif;
+        }
+    }
+
+    .profile-img {
+        height: 250px;
+        width: 250px;
+        border-radius: 50%;
+    }
+}
+
+

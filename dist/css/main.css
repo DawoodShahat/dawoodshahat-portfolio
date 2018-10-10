@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+* {
+  margin: 0;
+  padding: 0; }
+
+header {
+  color: #fff;
+  width: 100%;
+  z-index: 10;
+  position: fixed;
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  align-items: center;
+  padding: 1rem 0; }
+  header .navbar ul {
+    list-style-type: none;
+    display: flex;
+    width: 100%; }
+  header .nav-link {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    padding: .8rem 2rem;
+    transition: all .8s ease-out; }
+    header .nav-link:hover {
+      background-color: rgba(255, 255, 255, 0.3); }
+  header .branding {
+    margin-right: auto;
+    margin-left: 2rem; }
+    header .branding .logo {
+      font-size: 1.5em; }
+    header .branding .toggler-icon {
+      margin-right: 2rem;
+      display: none; }
+      header .branding .toggler-icon .line {
+        height: 4px;
+        width: 38px;
+        background: #000; }
+        header .branding .toggler-icon .line:nth-child(2) {
+          margin: 6px 0; }
+
+.home {
+  height: 100vh;
+  width: 100%;
+  color: #fff;
+  background: url("../assets/business.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .home:after {
+    content: "";
+    position: absolute;
+    background: rgba(0, 0, 0, 0.7);
+    height: 100vh;
+    width: 100%; }
+  .home .description {
+    z-index: 3;
+    font-family: 'Open Sans', sans-serif; }
+  .home .lg-heading {
+    font-size: 3.5em; }
+  .home .sm-heading {
+    font-weight: 100;
+    font-size: 2em; }
+
+.about {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 11rem 0; }
+  .about .profile-wrapper {
+    flex: 1 1 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .about .description-wrapper {
+    flex: 1 1 40%; }
+    .about .description-wrapper .description {
+      width: 80%;
+      font-size: 1.3em;
+      line-height: 1.5;
+      font-family: 'Open Sans', sans-serif; }
+  .about .profile-img {
+    height: 250px;
+    width: 250px;
+    border-radius: 50%; }
+
+.skills {
+  width: 100%;
+  background: tomato;
+  padding: 5rem 0; }
+  .skills .skills-wrapper {
+    padding-bottom: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; }
+  .skills .section-heading {
+    color: #fff;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 3.5em;
+    padding-top: 3rem; }
+  .skills .skill {
+    margin: 1rem; }
+    .skills .skill img {
+      height: 100px;
+      width: 100px; }
+
+.work {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: #44546C;
+  width: 100%;
+  padding: 3rem 0; }
+  .work .section-heading {
+    margin-top: 3rem;
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    font-size: 3.5em; }
+  .work .projects {
+    margin: 3rem 0;
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap; }
+  .work .project {
+    flex-grow: 2;
+    background-color: #fff;
+    width: 25%;
+    border-radius: 11px;
+    margin: 0 2rem 2rem 2rem; }
+    .work .project-img {
+      width: 100%;
+      height: 201px;
+      border-top-left-radius: 11px;
+      border-top-right-radius: 11px; }
+    .work .project-name {
+      border-bottom: 1px solid #000;
+      display: block;
+      padding-bottom: .4rem;
+      margin-bottom: .4rem; }
+    .work .project-description {
+      margin: .3rem 1rem; }
+    .work .project-link {
+      display: flex;
+      justify-content: space-between; }
+      .work .project-link a {
+        text-decoration: none;
+        color: #000; }
+
+.contact {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  text-align: center;
+  padding: 8rem 0;
+  color: #fff;
+  font-family: 'Open Sans', sans-serif; }
+  .contact .social-media {
+    margin-bottom: 1rem; }
+    .contact .social-media a {
+      color: inherit;
+      border: 2px solid #fff;
+      display: inline-block;
+      border-radius: 50%;
+      margin: 0 1rem 1rem 0; }
+    .contact .social-media i {
+      font-size: 2.0em;
+      margin: .5rem; }
+    .contact .social-media .description {
+      margin-top: 1rem; }
+
+@media screen and (max-width: 768px) {
+  header {
+    display: block;
+    background-color: #fff;
+    color: #000; }
+    header .branding {
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      header .branding .toggler-icon {
+        display: block; }
+      header .branding .logo {
+        font-size: 1em; }
+    header .navbar ul {
+      margin-top: 3px;
+      display: block; }
+    header .nav-link {
+      display: inline-block;
+      margin: 0;
+      color: #000;
+      width: 100%; }
+      header .nav-link:hover {
+        background: rgba(222, 222, 222, 0.2); }
+  .navbar {
+    display: none; }
+    .navbar.show {
+      display: block; }
+  .home .description .lg-heading {
+    font-size: 2.8em; }
+  .home .description .sm-heading {
+    font-size: 1.5em; }
+  .about {
+    flex-direction: column; }
+    .about .description-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 3rem; }
+  .work .projects {
+    width: 85%; } }
+
+@media screen and (max-width: 600px) {
+  .home .description .lg-heading {
+    font-size: 2.4em; }
+  .home .description .sm-heading {
+    font-size: 1em; }
+  .work .project {
+    width: 100%; } }

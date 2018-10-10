@@ -1,0 +1,63 @@
+
+// _work.scss
+.work {
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #44546C;
+    width: 100%;
+    padding: 3rem 0;
+
+    .section-heading {
+        margin-top: 3rem;
+        font-family: 'Open Sans', sans-serif;
+        color: #fff;
+        font-size: 3.5em;
+    }
+
+    .projects {
+        margin: 3rem 0;
+        width: 70%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+   .project {
+       flex-grow: 2;
+       background-color: #fff;
+       width: 25%;
+       border-radius: 11px;
+       margin: 0 2rem 2rem 2rem;
+
+		 &-img {
+			 width: 100%;
+			 height: 201px;
+			 border-top-left-radius: 11px;
+			 border-top-right-radius: 11px;
+		 }
+		 
+		 &-name {
+			 border-bottom: 1px solid #000;
+			 display: block;
+			 padding-bottom: .4rem;
+			 margin-bottom: .4rem;
+		 }
+		 
+		 &-description {
+			 margin: .3rem 1rem;
+		 }
+		 
+		 &-link {
+			 display: flex;
+			 justify-content: space-between;
+			 
+			 a {
+				 text-decoration: none;
+				 color: #000;
+			 }
+		 }
+
+   } 
+}
