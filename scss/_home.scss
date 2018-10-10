@@ -10,15 +10,6 @@
     background-repeat: no-repeat;
     @include centerXY;
 
-    // overlay
-    &:after {
-        content: "";
-        position: absolute;
-        background: rgba(#000, 0.7);
-        height: 100vh;
-        width: 100vw;
-    }
-
     .description {
         z-index: 3;
         font-family: 'Open Sans', sans-serif;
@@ -32,4 +23,11 @@
         font-weight: 100;
         font-size: 2em;
     }
+}
+
+.home-overlay {
+        position: absolute;
+        background: rgba(#000, 0.7);
+        height: 100vh;
+        width: 100%;
 }

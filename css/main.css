@@ -50,12 +50,6 @@ header {
   display: flex;
   justify-content: center;
   align-items: center; }
-  .home:after {
-    content: "";
-    position: absolute;
-    background: rgba(0, 0, 0, 0.7);
-    height: 100vh;
-    width: 100vw; }
   .home .description {
     z-index: 3;
     font-family: 'Open Sans', sans-serif; }
@@ -64,6 +58,12 @@ header {
   .home .sm-heading {
     font-weight: 100;
     font-size: 2em; }
+
+.home-overlay {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.7);
+  height: 100vh;
+  width: 100%; }
 
 .about {
   display: flex;
@@ -200,10 +200,15 @@ header {
     display: none; }
     .navbar.show {
       display: block; }
-  .home .description .lg-heading {
-    font-size: 2.8em; }
-  .home .description .sm-heading {
-    font-size: 1.5em; }
+  .home {
+    background: black;
+    opacity: 0.7; }
+    .home .description .lg-heading {
+      font-size: 2.8em; }
+    .home .description .sm-heading {
+      font-size: 1.5em; }
+  .home-overlay {
+    background: transparent; }
   .about {
     flex-direction: column; }
     .about .description-wrapper {
