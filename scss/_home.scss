@@ -2,6 +2,7 @@
 .home {
 
     height: 100vh;
+    width: 100%;
     color: #fff;
     background: url('../assets/business.jpg');
     background-size: cover;
@@ -10,13 +11,13 @@
     @include centerXY;
 
     // overlay
-//    &:after {
- //       content: "";
-  //      position: absolute;
-   //     background: rgba(#000, 0.7);
-    //    height: 100vh;
-     //   width: 100%;
-   // }
+    &:after {
+        content: "";
+        position: absolute;
+        background: rgba(#000, 0.7);
+        height: 100vh;
+        width: 100vw;
+    }
 
     .description {
         z-index: 3;
