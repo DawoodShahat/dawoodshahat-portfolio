@@ -4,7 +4,7 @@
   "description": "site were you can showcase your work.",
   "main": "index.js",
   "scripts": {
-    "sass": "node-sass -w scss/ -o dist/css --recursive"
+    "sass": "node-sass -w scss/ -o css/ --recursive"
   },
   "author": "Dawood Shahat",
   "license": "MIT",
