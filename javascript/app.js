@@ -28,4 +28,47 @@ window.onload = () => {
             }
         }
     }
+
+    // smooth scroll
+    let navElements = document.querySelectorAll('.nav-link');
+    console.log(navElements);
+    let targetNodes = ['home', 'about', 'skills', 'work', 'contact'];
+    
+    navElements.forEach( (navLink, index) => {
+    let targetNode = document.getElementById(targetNodes[index]);
+
+        navLink.addEventListener('click', event => {
+            event.preventDefault();
+            if(window.scrollTo){
+                window.scrollTo({
+                    'behavior': 'smooth',
+                    'top': targetNode.offsetTop
+                });
+            }
+        });
+   
+     }); 
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
